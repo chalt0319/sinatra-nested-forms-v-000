@@ -8,10 +8,10 @@ module FormsLab
     end
 
     post '/pirates' do
-      @pirates = Pirates.new(params[pirate])
-      params[ship].each do |details|
+      @pirates = Pirates.new(params[:pirate])
+      params[:ship].each do |details|
         Course.new(details)
-      end 
+      end
       erb :show
     end
   end
