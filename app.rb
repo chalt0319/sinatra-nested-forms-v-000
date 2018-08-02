@@ -12,7 +12,7 @@ module FormsLab
       params[:pirate][:ship].each do |details|
         Ship.new(details)
       end
-      erb :show
+      erb :'pirates/show'
     end
   end
 end
